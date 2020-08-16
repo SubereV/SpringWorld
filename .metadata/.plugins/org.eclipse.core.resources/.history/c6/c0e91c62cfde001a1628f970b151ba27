@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="student">
+		Name: <input name="name" type="text" /><br> Gpa: <input
+			name="gpa" type="text"><br> Major: <select name="major">
+			<option value="web">Web application</option>
+			<option value="design">Grapic Design</option>
+			<option value="java">Java Programing</option>
+		</select>
+	</form>
+</body>
+</html>

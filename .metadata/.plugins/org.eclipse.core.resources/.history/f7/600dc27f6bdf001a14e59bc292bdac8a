@@ -1,0 +1,21 @@
+package edu.fpt.spring;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import edu.fpt.spring.model.Permission;
+
+@SpringBootApplication
+public class LoginSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LoginSpringApplication.class, args);
+	}
+	
+	
+
+}

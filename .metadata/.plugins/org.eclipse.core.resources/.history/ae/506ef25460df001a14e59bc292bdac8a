@@ -1,0 +1,33 @@
+package edu.fpt.spring.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.annotation.Bean;
+
+public class PermissionList {
+	
+	List<Permission> permissions;
+	
+	public PermissionList() {
+		permissions = new ArrayList<Permission>();
+		permissions.add(new Permission("m", "member"));
+		permissions.add(new Permission("a", "admin"));
+		permissions.add(new Permission("g", "guest"));
+	}
+
+	public PermissionList(List<Permission> permissions) {
+		super();
+		this.permissions = permissions;
+	}
+
+	@Bean(name = "permission")
+	public List<Permission> getPermissions() {
+		return permissions;
+	}
+	
+	public void setPermissions(List<Permission> permissions) {
+		this.permissions = permissions;
+	}
+	
+}

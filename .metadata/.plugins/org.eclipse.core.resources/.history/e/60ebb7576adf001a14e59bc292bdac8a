@@ -1,0 +1,28 @@
+package edu.fpt.spring.model;
+
+import java.io.Serializable;
+import java.util.List;
+
+public class PermissionList implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	List<Permission> permissions;
+	
+	
+	public PermissionList() {
+	}
+
+	public PermissionList(List<Permission> permissions) {
+		super();
+		this.permissions = permissions;
+	}
+
+	public List<Permission> getPermissions() {
+		return permissions;
+	}
+	
+	public void setPermissions(List<Permission> permissions) {
+		this.permissions = permissions;
+	}
+	
+}

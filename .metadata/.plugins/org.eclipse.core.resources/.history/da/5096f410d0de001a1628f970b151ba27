@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="student">
+		Name: ${name}<br /> Gpa: ${gpa}<br /> Major: ${major}
+	</form>
+</body>
+</html>

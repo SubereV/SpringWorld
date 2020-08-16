@@ -1,0 +1,36 @@
+package edu.fpt.spring.model;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.annotation.Bean;
+
+public class PermissionList implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+	List<Permission> permissions;
+	
+	
+	public PermissionList() {
+	}
+
+	public PermissionList(List<Permission> permissions) {
+		super();
+		this.permissions = permissions;
+	}
+
+	@Bean(name = "permissions")
+	public List<Permission> getPermissions(){
+		List<Permission> permissions = new ArrayList<Permission>();
+		permissions.add(new Permission("m", "member"));
+		permissions.add(new Permission("g", "guest"));
+		permissions.add(new Permission("a", "admin"));
+		return permissions;
+	}
+	
+	public void setPermissions(List<Permission> permissions) {
+		this.permissions = permissions;
+	}
+	
+}

@@ -1,0 +1,18 @@
+package edu.fpt.spring;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+	
+	public String student-form() {
+		return "student-form";
+	}
+	
+	public String student-info() {
+		return "stu"
+	}
+}

@@ -1,0 +1,19 @@
+package edu.fpt.spring.model;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PermissionList {
+	
+	List<Permission> permissions;
+	
+	public PermissionList() {
+		permissions = new ArrayList<Permission>();
+		permissions.add(new Permission("m", "member"));
+		permissions.add(new Permission("a", "admin"));
+		permissions.add(new Permission("g", "guest"));
+	}
+	
+	
+	
+}

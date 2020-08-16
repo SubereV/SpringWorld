@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xlmns:th="http://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>Username: <span th:text:="${username}"></span></h3>
+	<h3>Password: <span th:text:="${password}"></span></h3>
+</body>
+</html>

@@ -1,0 +1,32 @@
+package edu.fpt.spring;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+
+import edu.fpt.spring.model.Permission;
+
+@SpringBootApplication
+@EnableAutoConfiguration
+public class LoginSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(LoginSpringApplication.class, args);
+	}
+	
+	@Bean(name = "permissions")
+	public List<Permission> getPermissions(){
+		List<Permission> permissions = new ArrayList<Permission>();
+		permissions.add(new Permission("m", "member"));
+		permissions.add(new Permission("g", "guest"));
+		permissions.add(new Permission("a", "admin"));
+		System.out.println(permissions);
+		return permissions;
+	}
+
+}

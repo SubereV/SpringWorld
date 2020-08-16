@@ -1,0 +1,5 @@
+package edu.fpt.spring.model;
+
+public class PermissionList {
+
+}

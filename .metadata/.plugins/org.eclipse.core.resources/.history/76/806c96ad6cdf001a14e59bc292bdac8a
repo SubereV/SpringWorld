@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="user" method="post">
+		Username: <input name="username" type="text" /><br> Password: <input
+			name="password" type="password" /><br> Permission: <select
+			name="permissionId">
+			<option th:each="item: ${permissions}" th:value="${item.id}"
+				th:text="${item.name}"></option>
+		</select> <input type="submit" value="Login">
+	</form>
+</body>
+</html>
