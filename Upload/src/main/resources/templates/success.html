@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<div th:if="${message}">
+<h2 th:text="${message}"></h2>
+</div>
+<body>
+<div>
+image uploaded: <span th:text="${image.getOriginalFilename()}"></span>
+</div>
+</body>
+</html>

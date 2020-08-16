@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 import edu.fpt.spring.model.Permission;
-import edu.fpt.spring.model.PermissionList;
+import edu.fpt.spring.dao.PermissionList;
 import edu.fpt.spring.model.User;
 
 @Controller
